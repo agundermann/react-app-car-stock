@@ -47,6 +47,12 @@ const data = [
 ];
 
 describe('simple queries', () => {
+  it('does not filter if query is empty', () => {
+    const result = filterCars(data, '');
+
+    expect(result).toEqual(data);
+  });
+
   it('filters by type', () => {
     const result = filterCars(data, 'ferrari');
 
@@ -91,5 +97,14 @@ describe('simple queries', () => {
 
     expect(result.length).toBe(1);
     expect(result[0]).toBe(data[1]);
+  });
+});
+
+describe('advanced queries', () => {
+  it('filters by multiple search strings', () => {
+    const result = filterCars(data, 'audi <20000');
+
+    expect(result.length).toBe(1);
+    expect(result[0]).toBe(data[5]);
   });
 });
