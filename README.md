@@ -17,7 +17,7 @@ Also see [Create React App](https://github.com/facebookincubator/create-react-ap
 UI & Functionality
 ---
 
-The UI mainly consists of a single text input to enter a search query, and a table to display the results. The query can contain multiple words separated by spaces, all of which have to present in either the cars' type, color or price. Additionally, words starting with "<" or ">" and followed by a number can be used to search for cars by their max or min price, respectively.
+The UI mainly consists of a single text input to enter a search query, and a table to display the results. The query can contain multiple words separated by spaces, all of which have to be present in either the cars' type, color or price. Additionally, words starting with "<" or ">" and followed by a number can be used to search for cars by their max or min price, respectively.
 
 Implementation
 ---
